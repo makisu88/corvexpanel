@@ -416,14 +416,14 @@ fi
 # Printing nice ascii aslogo
 clear
 echo
-echo "                __     __        _        "
-echo "  _ __ ___  _   \ \   / /__  ___| |_ __ _ "
-echo " | '_ \` _ \| | | \ \ / / _ \/ __| __/ _\` |"
-echo " | | | | | | |_| |\ V /  __/\__ \ || (_| |"
-echo " |_| |_| |_|\__, | \_/ \___||___/\__\__,_|"
-echo "            |___/                         "
+echo " ,-----.                                        ,------.                        ,--. "
+echo " '  .--./ ,---. ,--.--.,--.  ,--.,---. ,--.  ,--.|  .--. ' ,--,--.,--,--,  ,---. |  | "
+echo " |  |    | .-. ||  .--' \  `'  /| .-. : \  `'  / |  '--' |' ,-.  ||      \| .-. :|  | "
+echo " '  '--'\' '-' '|  |     \    / \   --. /  /.  \ |  | --' \ '-'  ||  ||  |\   --.|  | "
+echo "  `-----' `---' `--'      `--'   `----''--'  '--'`--'      `--`--'`--''--' `----'`--' "
+echo "                                                                                      "            
 echo
-echo '                                myVesta Control Panel'
+echo '                                CorvexPanel Control Panel'
 echo -e "\n\n"
 
 echo 'Following software will be installed on your system:'
@@ -2189,23 +2189,23 @@ fi
 
 # Sending notification to admin email
 echo -e "Congratulations, you have just successfully installed \
-myVesta Control Panel
+CorvexPanel
 
 https://$ip:$port/$secretquery
 username: admin
 password: $vpass
 
-We hope that you enjoy your installation of myVesta. Please \
+We hope that you enjoy your installation of CorvexPanel. Please \
 feel free to contact us anytime if you have any questions.
 Thank you.
 
 --
 Sincerely yours
-myvestacp.com team
+corvexpanel.com team
 " > $tmpfile
 
 send_mail="$VESTA/web/inc/mail-wrapper.php"
-cat $tmpfile | $send_mail -s "myVesta Control Panel" $email
+cat $tmpfile | $send_mail -s "CorvexPanel Control Panel" $email
 
 # Congrats
 echo '=========================================='
